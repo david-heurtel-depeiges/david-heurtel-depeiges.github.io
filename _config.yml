@@ -1,0 +1,30 @@
+name: David Heurtel-Depeiges
+description: Personal website
+menu:
+ - page: About
+   url: /about
+ - page: Papers
+   url: /papers
+   links:
+    - title: Working papers
+      url: "#working-papers"
+    - title: Published papers
+      url: "#published-papers"
+ - page: Research Projects
+   url: /research
+   links:
+    - title: "Project One"
+      url: "#project-one"
+    - title: "Project Two"
+      url: "#project-two"
+ - page: Curriculum Vitae
+   url: "david-heurtel-depeiges.github.io/Heurtel-Depeiges_ResumeC.pdf"
+ - page: Teaching
+   url: /teaching
+#menu_external:
+ #- title: OleVik.me
+  # url: "http://olevik.me/"
+mathjax: false
+markdown: kramdown
+encoding: utf-8
+baseurl: 
