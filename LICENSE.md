@@ -30,14 +30,14 @@ SOFTWARE.
 
 
 The "content of the website" includes but is not restricted to:
--every PDF on this website
--every notebook on this website
--every block of code, either as an independent block in a post, a file hosted on the website
--every block of code or text, linked from this website on external storage or sharing website, where no specific license is mentioned
--every post or text on this website
--everything else that was not in the original template
+   -every PDF on this website
+   -every notebook on this website
+   -every block of code, either as an independent block in a post, a file hosted on the website
+   -every block of code or text, linked from this website on external storage or sharing website, where no specific license is mentioned
+   -every post or text on this website
+   -everything else that was not in the original template
 
-I am putting the content of the website under an GNU AGPLv3 license:
+**I am putting the content of the website under an GNU AGPLv3 license:**
 
    GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
