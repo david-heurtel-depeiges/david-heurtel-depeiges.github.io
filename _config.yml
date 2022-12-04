@@ -21,6 +21,8 @@ menu:
    url: "david-heurtel-depeiges.github.io/Heurtel-Depeiges_ResumeC.pdf"
  - page: Teaching
    url: /teaching
+ - page: License
+   url: "LICENSE.md"
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
