@@ -22,7 +22,7 @@ menu:
  - page: Teaching
    url: /teaching
  - page: License
-   url: "#LICENSE.md"
+   url: "#LICENSE"
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
