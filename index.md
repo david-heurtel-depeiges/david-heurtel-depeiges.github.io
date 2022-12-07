@@ -1,7 +1,7 @@
 ---
 title: "David Heurtel-Depeiges"
 summary: "David Heurtel-Depeiges's personnal website."
-date: 2022-12-04
+date: 2022-12-07
 layout: default
 ---
 
