@@ -1,3 +1,10 @@
+---
+title: "License"
+summary: "About this page."
+date: 2022-12-07
+layout: default
+---
+
 
 MIT License 2016-2019 by Ole Vik. Repository forked locally (for tests) from Ole Vik then pushed on to my GitHu
 
