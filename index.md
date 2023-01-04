@@ -1,13 +1,13 @@
 ---
 title: "David Heurtel-Depeiges"
 summary: "David Heurtel-Depeiges's personnal website."
-date: 2022-12-07
+date: 2023-01-04
 layout: default
 ---
 
 Hi all, my name is David Heurtel-Depeiges and I am a final-year student at Ecole Polytechnique currently studying applied mathematics and computer science. I have a very strong interest in Machine Learning in general. I want to make better models and improve the way we use them by doing research in several topics from out-of-distribution or adversarial robustness to interpretability and understanding what can limit generalization or expressivity. Along the way, I could not ignore how NLP shaped this field with techniques (attention) and whole families of models (RNN like LSTM first then Transformers) now reaching well beyond language tasks.
 
-**News** I started yesterday a new seminar on DL by Marc Lelarge. After TensorFlow and Keras, let's learn PyTorch through first a quick DIY refresher on basic DL techniques. Then I am looking forward to two new modules this year, about diffusion models and multi-head transformers. I will quickly start working on a project, hopefully about Graph Transformers or robustness issues. I will keed you posted (or check my github).
+**News** I started yesterday a new seminar on DL by Marc Lelarge. After TensorFlow and Keras, let's learn PyTorch through first a quick DIY refresher on basic DL techniques (and maybe even some Jax). Then I am looking forward to two new modules this year, about diffusion models and multi-head transformers. I will quickly start working on a project, hopefully about Graph Transformers or robustness issues. I will keed you posted (or check my github).
 
 As for past projects or coursework...I have worked on wildfires forecasting and machine learning as part of an academic project and I continue to develop several models to help predict their dynamics. You can see the  <a href="https://david-heurtel-depeiges.github.io/MAP07_rapportfinal.pdf">dissertation</a> and the <a href="https://david-heurtel-depeiges.github.io/PSC_Soutenance.pdf">presentation</a> (all in French) we worked on part-time for a few months with Saad Souilmi, Pierric Sperry, Paul Zeinaty and Germain Vivier--Ardisson (presentation was focused on popularization of the technics used and the scientific approach we chose, dissertation although it was also explanatory contained more scientific material).
 
