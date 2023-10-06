@@ -1,8 +1,8 @@
 {
   "name": "personal-academic-website",
-  "version": "1.1.1",
-  "description": "A skeleton-site for a personal academic website, written in Jekyll for hosting with GitHub Pages.",
-  "author": "Ole Vik <git@olevik.me>",
+  "version": "2.0",
+  "description": "A skeleton-site for a personal academic website, written in Jekyll for hosting with GitHub Pages. Template from Ole Skil",
+  "author": "David Heurtel-Depeiges",
   "private": true,
   "license": "SEE LICENSE IN <LICENSE>",
   "scripts": {

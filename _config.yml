@@ -1,6 +1,7 @@
 name: David Heurtel-Depeiges
 description: Personal website
 menu:
+
  #- page: About
  #  url: /about
  #- page: Papers
@@ -19,8 +20,6 @@ menu:
      # url: "#project-two"
  - page: Curriculum Vitae
    url: "Heurtel-Depeiges_ResumeC.pdf"
- - page: Teaching
-   url: /teaching
  - page: License
    url: /license
 #menu_external:

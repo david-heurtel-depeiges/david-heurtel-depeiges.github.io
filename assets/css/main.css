@@ -364,3 +364,16 @@ pre {
 @media only screen and (min-width: 992px) {}
 @media only screen and (min-width: 1200px) {}
 
+#news {
+	background-color: #f9f9f9; /* Light grey background */
+	padding: 20px;
+	border-radius: 10px;
+  }
+  
+  #news h2 {
+	border-bottom: 2px solid #333;  /* Adds a bottom border to the "Latest News" header */
+  }
+  
+  #news h3 {
+	color: #007acc; /* Changes the color of the news item title */
+  }

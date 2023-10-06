@@ -5,14 +5,30 @@ date: 2023-01-04
 layout: default
 ---
 
-Hi all, my name is David Heurtel-Depeiges and I am a final-year student at Ecole Polytechnique currently studying applied mathematics and computer science. I have a very strong interest in Machine Learning in general. I want to make better models and improve the way we use them by doing research in several topics from out-of-distribution or adversarial robustness to interpretability and understanding what can limit generalization or expressivity. Along the way, I could not ignore how NLP shaped this field with techniques (attention) and whole families of models (RNN like LSTM first then Transformers) now reaching well beyond language tasks.
+Hi, I am David Heurtel-Depeiges, a final year Master Student at Ecole Normale Supérieure Paris-Saclay through the MVA program: Mathematics, Vision and Learning (Apprentissage in French). I completed my undergraduate studies at Ecole Polytechnique, where I studied Applied Mathematics and Computer Science. I also did my first year of Master's there (the French higher education system is highly convoluted, trust me when I say what I did is not unusual). I am interested in Machine Learning, Deep Learning and their application to many interesting problem from environemental studies to cosmology or other fields. I am also interested in the theoretical aspects of ML, first understanding why these black boxes work so well in practice, then trying to improve them and finally trying to understand their limits and interpret their results. 
 
-**News** I started yesterday a new seminar on DL by Marc Lelarge. After TensorFlow and Keras, let's first learn PyTorch (and maybe even some Jax) through a quick DIY refresher on basic DL techniques. Then I am looking forward to two new modules this year, about diffusion models and multi-head transformers. I will quickly start working on a project, hopefully about Graph Transformers or robustness issues. I will keep you posted (or check my github).
+I am currently looking for a PhD position starting september 2024, either in academia or in industry (through the CIFRE program in France or a similar program abroad). I am also looking for a 4 to 6 months research internship starting in March/April 2024. It would be great to be able to build a continuous project from the internship to the PhD but I am available for all kinds of opportunities.
 
-As for past projects or coursework...I have worked on wildfires forecasting and machine learning as part of an academic project and I continue to develop several models to help predict their dynamics. You can see the  <a href="https://david-heurtel-depeiges.github.io/MAP07_rapportfinal.pdf">dissertation</a> and the <a href="https://david-heurtel-depeiges.github.io/PSC_Soutenance.pdf">presentation</a> (all in French) we worked on part-time for a few months with Saad Souilmi, Pierric Sperry, Paul Zeinaty and Germain Vivier--Ardisson (presentation was focused on popularization of the technics used and the scientific approach we chose, dissertation although it was also explanatory contained more scientific material).
 
-Here is the continuation with a new approach: CNN on satelite data. First this <a href="https://david-heurtel-depeiges.github.io/WildfireSatellite.ipynb">notebook</a>, a quick exploratory experiment with FRNN architectures suggested by [this paper](https://arxiv.org/abs/2112.02447) and on the [corresponding dataset](https://www.kaggle.com/datasets/fantineh/next-day-wildfire-spread). We are currently working on a new clean dataset, with better time resolutions but more missing data. On this dataset, we are applying a ConvLSTM <sup>[1](https://proceedings.neurips.cc/paper/2015/file/07563a3fe3bbe7e3ba84431ad9d055af-Paper.pdf)</sup> architecure and working on two topics: how to efficiently initialize it with pretraining & how to get around the missing data. We are thinking about changes to the loss function. Watch out for the code and report in a few weeks.
+## News 
 
-Part of my curriculum at Polytechnique, I took a research paper discussion course & seminar where we focused on statistical learning theory (in two parts: first, non parametric estimators and second, empirical risk minimization). Here you can find our <a href="https://david-heurtel-depeiges.github.io/EA_MAP_576__English_Version_.pdf">presentation</a> on Weighted Nadaraya-Watson Regression (from [this article](https://www.researchgate.net/profile/Zongwu-Cai/publication/222545663_Weighted_Nadaraya-Watson_regression_estimation/links/5f94bcc7299bf1b53e438ddc/Weighted-Nadaraya-Watson-regression-estimation.pdf)) and here the associated <a href="https://david-heurtel-depeiges.github.io/WNW_Regression_Estimate_MAP_576.ipynb">jupyter notebook</a> with most of the simulations plus tools for our classmates to start their own.
+**2. October 2023 Started the MVA**, first course today about AGI and AGI safety, looking forward to the projects/hackathon in the first weeks of November.
 
-Before studying at Ecole Polytechnique, I was a student in Maths and Physics (MP*) with an option in Computer Science at Lycée Privé Sainte-Geneviève, Versailles. MP is part of the scientific CPGE system (a two year post-secondary/undergraduate program in France). Roughly 8% of french students join a CPGE each year after Baccalauréat (A-level/Advanced Placement). In addition to theoretical courses, two hours a week are dedicated to a research project on a given theme, where students are encouraged to read research papers and come up with their own remarks, tools, experiments arround these papers. Ours was Maths and Oceans. We started to study how braids could help decrypt buoy movement at the surface of the ocean or fish behaviour in a flock before COVID-19 interrupted classes and forced us to go remote. Sadly, projects like this one were discontinued. 
+**23. September 2023** Currently looking at the **Machine Unlearning** Competition on Kaggle from NeurIPS 2023. 
+
+**29. September 2023**: With Blakesley Burkart, Ruben Ohana and Bruno Regaldo-Saint Blancard we just **submitted a paper at the ML4PhysicalScience workshop at Neurips 2023**. The cross-atlantic collaboration (I am back in France after my internship at the Flatiron Institute in NY) continues towards tools for cosmological inference, diffusion models for science and more. Stay tuned for the paper and the code (upcoming package!).
+
+**16. Septempber 2023** Learning JAX with simple little projects. My goal is to be able to write from scratch and train an LLM by December (using transfer learning to reduce costs).
+
+
+
+## Main Research and Contributions
+
+A list of my contributions, in writing and in code can be found [here](/papers.html). Here is a short summary of my most recent work:
+
+
+Please find bellow link to pages for my different projects. I will try to keep them up to date with the latest developments.
+
+
+## Other projects
+
