@@ -15,7 +15,5 @@ Verdi's Requiem with Via Luce orchestra and the following soloists: Amandine AMM
 <iframe src="https://drive.google.com/file/d/1dw7Fw0zGM-toevvuyUeTG7MCEvmYXig0/preview" width="640" height="360"></iframe>
 
 
-
-
 ## Cooking
 

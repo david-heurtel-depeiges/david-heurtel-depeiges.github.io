@@ -24,10 +24,7 @@ I am currently looking for a PhD position starting september 2024, either in aca
 
 ## Main Research and Contributions
 
-A list of my contributions, in writing and in code can be found [here](/papers.html). Here is a short summary of my most recent work:
-
-
-Please find bellow link to pages for my different projects. I will try to keep them up to date with the latest developments.
+A list of my contributions, publications and code can be found [here](/papers). Please find bellow link to pages for my different projects. I will try to keep them up to date with the latest developments.
 
 
 ## Other projects
