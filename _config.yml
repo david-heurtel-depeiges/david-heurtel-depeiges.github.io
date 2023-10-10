@@ -18,14 +18,14 @@ menu:
     #  url: "#project-one"
     #- title: "Project Two"
      # url: "#project-two"
- - page: Papers
-  url : /papers
- - page: Curriculum Vitae
-   url: "Heurtel-Depeiges_ResumeC.pdf"
- - page: License
-   url: /license
+  - page: Papers
+    url : /papers
+  - page: Curriculum Vitae
+    url: "Heurtel-Depeiges_ResumeC.pdf"
+  - page: License
+    url: /license
   - page: Outside of work 
-   url: /misc
+    url: /misc
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
