@@ -4,7 +4,7 @@ summary: "David Heurtel-Depeiges's personnal website."
 date: 2023-01-04
 layout: default
 ---
-<img align="left" width="200" height="286" src="/docs/head_picture.jpg" style="padding-right: 10px; padding-bottom: 10px; padding-top: 10px; padding-left: 10px;"/>
+<img align="left" width="200" height="286" src="/docs/head_picture.jpg" style="padding-right: 10px; padding-top: 10px; padding-left: 10px;"/>
 
 Hi, I am David Heurtel-Depeiges, a final year Master Student at Ecole Normale Supérieure Paris-Saclay through the MVA program: Mathematics, Vision and Learning (Apprentissage in French). I completed my undergraduate studies at Ecole Polytechnique, where I studied Applied Mathematics and Computer Science. I also did my first year of Master's there (the French higher education system is highly convoluted, trust me when I say what I did is not unusual). I am interested in Machine Learning, Deep Learning and their application to many interesting problem from environemental studies to cosmology or other fields. I also want to expand my research to more theoretical aspects of ML, first understanding why these black boxes work so well in practice, then trying to improve them and finally trying to understand their limits and interpret their results. 
 
