@@ -29,7 +29,7 @@ td, th {
 
 | Venue | Poster Description | Link (click on picture) |
 | --- | --- | --- |
-| [Hammers and Nails 2023](https://indico.cern.ch/event/1202995/) | Using diffusion models for components separation and cosmological inference, with [Blakesley Burkhart](https://www.bburkhart.com/), [Ruben Ohana](https://rubenohana.github.io/) and [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/). | [<img src="/docs/Poster_HN2023_photo.png" style="height: 100px; width:200px;"/>](/docs/Poster_Hammers_and_Nails_2023-1.pdf)
+| [Hammers and Nails 2023](https://indico.cern.ch/event/1202995/) | Using diffusion models for components separation and cosmological inference, with [Blakesley Burkhart](https://www.bburkhart.com/), [Ruben Ohana](https://rubenohana.github.io/) and [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/). | [<img src="/docs/Poster_HN2023_photo.png" style="height: 100px; width:200px;"/>](Poster_Hammers_and_Nails_2023-1.pdf)
 
 
 
