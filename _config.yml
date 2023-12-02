@@ -31,6 +31,7 @@ menu:
 collections:
   other_projects:
     output: true
+    permalink: /other_projects/:path/
 mathjax: false
 markdown: kramdown
 encoding: utf-8
