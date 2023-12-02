@@ -32,4 +32,4 @@ A list of my contributions, publications and code can be found [here](/papers).
 ## Other projects
 
 ### Towards Monosemanticity in Vision Models with dictionary learning
-[<img src="/docs/github_mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic/)
+[<img src="/docs/github_mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/other_projects/monosemantic/)

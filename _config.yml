@@ -1,7 +1,6 @@
 name: David Heurtel-Depeiges
 description: Personal website
 menu:
-
  #- page: About
  #  url: /about
  #- page: Papers
@@ -29,6 +28,9 @@ menu:
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
+collections:
+  other_projects:
+    output: true
 mathjax: false
 markdown: kramdown
 encoding: utf-8
