@@ -12,18 +12,18 @@ I am currently looking for a PhD position starting september 2024, either in aca
 
 
 ## News 
+**16. December 2023 Will be giving a quick talk at NeurIPS 2023 ML4PS workshop!**
+
+**29. October 2023 In person at Hammers and Nails 2023 in Ascona, Switzerland**. Excited to be able to present a poster on my work on diffusion models for cosmology tomorrow. I am also looking forward to the talks and discussions with other researchers in the field.
 
 **28. October 2023 Paper accepted @ NeurIPS 2023 ML4PS workshop** very happy to have my first paper accepted at a conference. This work with [Blakesley Burkhart](https://www.bburkhart.com/), [Ruben Ohana](https://rubenohana.github.io/) and [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/) is about using diffusion models for components separation in cosmology. You can find more information about this work [here](/papers).
 
 **2. October 2023 Started the MVA**, my first course today was about AGI and AGI safety, looking forward to the projects/hackathon in the first weeks of November around the same topic.
 
-**23. September 2023** Currently looking at the **Machine Unlearning** Competition on Kaggle from NeurIPS 2023. 
-
-**16. Septempber 2023** Learning JAX with simple little projects. My goal is to be able to write from scratch and train an LLM by December (using transfer learning to reduce costs).
+**16. Septempber 2023** Learning JAX with small statistics projects. My goal is to be able to write from scratch and train an LLM by December (using transfer learning to reduce costs).
 
 
-
-## Main Research and Contributions
+## Main Research Projects and Contributions
 
 A list of my contributions, publications and code can be found [here](/papers).
 
@@ -31,3 +31,5 @@ A list of my contributions, publications and code can be found [here](/papers).
 
 ## Other projects
 
+### Towards Monosemanticity in Vision Models with dictionary learning
+[<img src="/docs/github_mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic/)
