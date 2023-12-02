@@ -1,6 +1,8 @@
 ---
 title: "Towards Monosemanticity : Decomposing Vision Models with Dictionary Learning"
 summary: "About this page."
+permalink: /other_projects/monosemantic/
+menu: false
 date: 2023-12-03
 layout: default
 ---

@@ -28,10 +28,6 @@ menu:
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
-collections:
-  other_projects:
-    output: true
-    permalink: /other_projects/:path/
 mathjax: false
 markdown: kramdown
 encoding: utf-8
