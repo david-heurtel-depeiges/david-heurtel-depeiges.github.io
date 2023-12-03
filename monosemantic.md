@@ -186,10 +186,23 @@ CLIP metric
 
 ## Appendix
 
-### Appendix A: Training Details
+### Appendix A: Visual examination of neurons and features
 
-#### Appendix A.1: Vision Models used
+### Appendix B: Semantic Diameter
 
-#### Appendix A.2: Sparsity, Dead Neurons and Neuron reviving
+Here is a plot of the matrix $$D$$:
 
-### Appendix B: Code
+<figure>
+  <img style="float:none;" width="800" height="170" src="/docs/D.pnd">
+  <figcaption>Figure App.B.1: The matrix D induced by ImageNet hierarchy</figcaption>
+</figure>
+
+And now a histogram of the semantic diameter of neurons and features for the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$, layer mixed5b):
+
+<figure>
+  <img style="float:none;" width="800" height="170" src="/docs/semantic_diameter.png">
+  <figcaption>Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
+</figure>
+
+### Appendix C: Sparsity
+
