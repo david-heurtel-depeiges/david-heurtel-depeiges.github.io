@@ -235,8 +235,8 @@ Now here are some "dog" features:
 </figure>
 
 <figure style="text-align: center;">
-  <img style="display: inline-block;" width="700" height="700" src="/docs/dog_feature_2140_run_ft92b79c_highest_act.png">
-  <figcaption style="display: block;">Figure App.A.7: Images activating feature 2140, dogs on a bed/mat?</figcaption>
+  <img style="display: inline-block;" width="700" height="700" src="/docs/dog_feature_2410_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.7: Images activating feature 2410, dogs on a bed/mat?</figcaption>
 </figure>
 
 <figure style="text-align: center;">
