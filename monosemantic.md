@@ -192,7 +192,50 @@ We provide here a few examples of top 25 images for features and neurons. We als
 
 First, here are some examples of top 25 images for random features learned by our auto-encoder on mixed 5b activations:
 
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/feature_0_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.1: Images activating feature 0, interpretation Mortarboard.</figcaption>
+</figure>
 
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/feature_8_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.2: Images activating feature 8, pointy objects with a metalic aspect.</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/feature_29_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.3: Images activating feature 29, animal shells that look articulated.</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/feature_4578_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.4: Images activating feature 4578, Furry animals with a greyish color.</figcaption>
+</figure>
+
+Now here is an example of a feature we had trouble interpreting. 
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/feature_3454_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.5: Images activating feature 3454.</figcaption>
+</figure>
+
+
+Now here are some "dog" features:
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/dog_feature_21_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.6: Images activating feature 21.</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/dog_feature_2140_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.7: Images activating feature 2140, dogs on a bed/mat?</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/dog_feature_3509_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.8: Images activating feature 3508, dogs with hair too long to see anything.</figcaption>
+</figure>
 
 ### Appendix B: Semantic Diameter
 
@@ -219,5 +262,5 @@ In this section, we provide histograms of the number of neurons and features act
 
 <figure style="text-align: center;">
   <img style="display: inline-block;" width="400" height="300" src="/docs/num_act_features_neurons.png">
-  <figcaption style="display: block;">Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
+  <figcaption style="display: block;">Figure App.C.1: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
