@@ -32,7 +32,7 @@ We will work on InceptionV1 activations. More precisely, we sill work on layers 
 <img  align="left" width="800" height="170" src="/docs/Inceptionv1L.png" />
 
 
-When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $$(B, C_{in}, H_{in}, W_{in})$$, producing a batch of shape $$(B, C_{layer}, H_{layer}, W_{layer})$$, we then sum averages activations over the spatial dimensions to get a batch of shape $$(B, C_{layer})$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
+When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $$(B, C_{in}, H_{in}, W_{in})$$, producing a batch of shape $$(B, C_{layer}, H_{layer}, W_{layer})$$, we then sum averages activations over the spatial dimensions to get a batch of shape $$(B, C_{layer})$$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
 
 #### 1.2.1 Auto-encoder
 
@@ -111,7 +111,7 @@ $$
 $$
 
 
-where $$N_i$$ is the number of images in class $$i$$ and $$f_k(\mathbf{x}_{ij})$$ is the activation of feature $$d_k$$ for image $$j$$ in class $$i$. 
+where $$N_i$$ is the number of images in class $$i$$ and $$f_k(\mathbf{x}_{ij})$$ is the activation of feature $$d_k$$ for image $$j$$ in class $$i$$. 
 
 We propose the following metric to evaluate the monosemanticity of a feature $$d_k$$:
 
