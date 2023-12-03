@@ -6,17 +6,17 @@ layout: default
 ---
 
 #### Quick Disclaimer
-This is a research project that is still in progress. I am still working to improve the quality of the code and the clarity of the results. I do not have Anthropic's manpower or compute ressources. I will obviously leave some questions unanswered and this should be taken more as a proof of concept than a definitive answer to the question of monosemanticity in vision models. Most notably, I have not been able to examine fully the result of each model in each hyper-parameter sweep. And the metric we suggest is not perfect.
+This is a research project that is still in progress. I am still working to improve the quality of the code and the clarity of the results. I do not have Anthropic's manpower or compute ressources. I will obviously leave some questions unanswered and this should be taken more as a proof of concept than a definitive answer to the question of monosemanticity in vision models. Most notably, we have not been able to fully examine the results of each model in every hyperparameter sweep.
 
 ### Abstract
 
-In artificial neural networks, the most basic computing unit, the neuron, can sometimes exhibit a phenomenon called superposition. This is the ability of a neuron to respond to very different features/inputs. If this is thought to increase the representational power of the network by learning over-complete representations and cramming more information in a single neuron, it can also hinders effort to probe said neural networks and hinder interpretability. In this work, we reproduce Anthropic's work on monosemanticity in language models and apply it to vision models. We show that their method is promising beyond its original scope. We also suggest a metric to evaluate the monosemanticity of a learned dictionary feature.
+In artificial neural networks, the most basic computing unit, the neuron, can sometimes exhibit a phenomenon called superposition. This is the ability of a neuron to respond to very different features/inputs. If this is thought to enhance the network's representational power by learning over-complete representations and cramming more information into a single neuron, it can also hinders effort to probe said neural networks and hinder interpretability. In this work, we reproduce Anthropic's work on monosemanticity in language models and apply it to vision models. We show that their method is promising beyond its original scope. We also suggest a metric to evaluate the monosemanticity of a learned dictionary feature.
 
 [<img src="/docs/github-mark.png" style="height: 40px; width:40px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity)
 
 ## Introduction
 
-In 2017 in their Distill article [Feature Visualization](https://distill.pub/2017/feature-visualization/), Olah et al. uncovered neurons in InceptionV1 that were responding to wats, foxed and cars. When probing further and visualizing the features learned by said neuron, one could clearly recognize a patchwork of cats head and cars hoods and windshields. This is a clear example of superposition. Authors wrote:
+In 2017 in their Distill article [Feature Visualization](https://distill.pub/2017/feature-visualization/), Olah et al. uncovered neurons in InceptionV1 that were responding to wats, foxed and cars. When probing further and visualizing the features learned by said neuron, one could clearly recognize a patchwork of cats head and cars hoods and windshields. This is a clear example of superposition. The authors stated::
 >"Examples like these suggest that neurons are not necessarily the right semantic unit for understanding neural nets."
 
 In language models trained by Anthropic, they similarly found neurons responding to a mixture of code and natural language. Probing superposition further in their series [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/), they suggest that an independent, monosemantic feature is actually a linear combination of neurons. They contend this increases neural network representation power, increases neural network ability to "represent more independent "features" of the data than it has neurons". Experiments on small toy models suggest this phenomenon arises naturally during training. 
@@ -301,4 +301,4 @@ In this section, we provide histograms of the number of neurons and features act
   <figcaption style="display: block;">Figure App.C.1: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
 
-Some further work exploring in details sparsity as a function of the bottleneck size would be interesting.
+Some further work exploring in detail the sparsity as a function of the bottleneck size would be interesting.
