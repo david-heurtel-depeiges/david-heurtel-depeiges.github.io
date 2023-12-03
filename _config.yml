@@ -19,6 +19,9 @@ menu:
      # url: "#project-two"
   - page: Papers
     url : /papers
+  - page: Towards Monosemanticity in Vision Models
+    url: /monosemantic
+    visible: false
   - page: Curriculum Vitae
     url: "Heurtel-Depeiges_ResumeC.pdf"
   - page: License
