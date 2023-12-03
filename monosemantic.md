@@ -188,21 +188,27 @@ CLIP metric
 
 ### Appendix A: Visual examination of neurons and features
 
+We provide here a few examples of top 25 images for features and neurons. We also provide our interpretation of some features.
+
+First, here are some examples of top 25 images for random features learned by our auto-encoder on mixed 5b activations:
+
+
+
 ### Appendix B: Semantic Diameter
 
 Here is a plot of the matrix $$D$$:
 
-<figure>
-  <img style="float:none;" width="300" height="300" src="/docs/D.png">
-  <figcaption>Figure App.B.1: The matrix D induced by ImageNet hierarchy</figcaption>
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="300" height="300" src="/docs/D.png">
+  <figcaption style="display: block;">Figure App.B.1: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
 One can clearly see some structure, with some large blocks of classes that are close to each other.
 
 And now a histogram of the semantic diameter of neurons and features for the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$, layer mixed5b):
 
-<figure>
-  <img style="float:none;" width="400" height="300" src="/docs/semantic_diameter.png">
-  <figcaption>Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="400" height="300" src="/docs/semantic_diameter.png">
+  <figcaption style="display: block;">Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
 
 The reader should note that the semantic diameter of neurons is much larger than the semantic diameter of features.
@@ -211,7 +217,7 @@ The reader should note that the semantic diameter of neurons is much larger than
 
 In this section, we provide histograms of the number of neurons and features activated by an image for the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$, layer mixed5b):
 
-<figure>
-  <img style="float:none;" width="400" height="300" src="/docs/num_act_features_neurons.png">
-  <figcaption>Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="400" height="300" src="/docs/num_act_features_neurons.png">
+  <figcaption style="display: block;">Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
