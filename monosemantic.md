@@ -5,8 +5,6 @@ date: 2023-12-03
 layout: default
 ---
 
-### WORK IN PROGRESS
-
 #### Quick Disclaimer
 This is a research project that is still in progress. I am still working to improve the quality of the code and the clarity of the results. I do not have Anthropic's manpower or compute ressources. I will obviously leave some questions unanswered and this should be taken more as a proof of concept than a definitive answer to the question of monosemanticity in vision models. Most notably, I have not been able to examine fully the result of each model in each hyper-parameter sweep. And the metric we suggest is not perfect.
 
