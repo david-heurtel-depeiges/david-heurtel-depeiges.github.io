@@ -287,18 +287,25 @@ And now a histogram of the semantic diameter of neurons and features for the run
 
 <figure style="text-align: center;">
   <img style="display: inline-block;" width="400" height="300" src="/docs/semantic_diameter.png">
-  <figcaption style="display: block;">Figure App.B.2: The matrix D induced by ImageNet hierarchy</figcaption>
+  <figcaption style="display: block;">Figure App.B.2: The semantic diameter of neurons and features for one run.</figcaption>
 </figure>
 
 The reader should note that the semantic diameter of neurons is much larger than the semantic diameter of features.
 
-### Appendix C: Sparsity
+### Appendix C: Sparsity and feature analysis
 
 In this section, we provide histograms of the number of neurons and features activated by an image for the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$, layer mixed5b):
 
 <figure style="text-align: center;">
   <img style="display: inline-block;" width="400" height="300" src="/docs/num_act_features_neurons.png">
-  <figcaption style="display: block;">Figure App.C.1: The matrix D induced by ImageNet hierarchy</figcaption>
+  <figcaption style="display: block;">Figure App.C.1: The number of neurons and features activated by an image for one run.</figcaption>
 </figure>
 
 Some further work exploring in detail the sparsity as a function of the bottleneck size would be interesting.
+
+Finally, here is a scatter plot of the proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons for the run same run.
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="500" height="300" src="/docs/feature_explained_by_neuron.png">
+  <figcaption style="display: block;">Figure App.C.2: The proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons for one run.</figcaption>
+</figure>
