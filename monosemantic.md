@@ -237,6 +237,14 @@ Now here are some "dog" features:
   <figcaption style="display: block;">Figure App.A.8: Images activating feature 3508, dogs with hair too long to see anything.</figcaption>
 </figure>
 
+And now to compare, a random neuron in mixed5b:
+
+<figure style="text-align: center;">
+  <img style="display: inline-block;" width="700" height="700" src="/docs/neuron_10_run_ft92b79c_highest_act.png">
+  <figcaption style="display: block;">Figure App.A.9: Images activating neuron 10, shiny/transparent things with some contrast with color black?</figcaption>
+</figure>
+
+
 ### Appendix B: Semantic Diameter
 
 Here is a plot of the matrix $$D$$:
