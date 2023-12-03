@@ -88,11 +88,7 @@ where $$\mathbf{f}(\mathbf{x}) = (f_1(\mathbf{x}), ..., f_K(\mathbf{x}))$$ and $
 
 #### 1.2.2 Training
 
-Training of the auto-encoder is challenging. Most notably, some feature die during training. This was known to happen in Anthropic's work. Periodically, they would "revive" dead features by reinitializing their weights. We do the same. During training, we compute the frequency of activation of each feature over the whole dataset. If a feature activation frequency falls bellow a certain threshold, we reinitialize its weights. Unforntunately, this scheme was very agressive and seems to harm significantly the L2 reconstruction loss. For a discussion about this phenomenon, see the Appendix.
-
-(https://distill.pub/2017/feature-visualization/appendix/)
-
-style="height: 100px; width:200px;"
+Training of the auto-encoder is challenging. Most notably, some feature die during training. This was known to happen in Anthropic's work. Periodically, they would "revive" dead features by reinitializing their weights. We do the same. During training, we compute the frequency of activation of each feature over the whole dataset. If a feature activation frequency falls bellow a certain threshold, we reinitialize its weights. Unfortunately, this scheme was very agressive and seems to harm significantly the L2 reconstruction loss. For a discussion about this phenomenon, see the Appendix.
 
 ### 1.3 Analyzing the results
 
@@ -134,15 +130,44 @@ This metric is far from perfect. Most notably for early layers, it is not clear 
 
 ### 2.1 Monosemanticity of features
 
-#### 2.1.1 Visual examination of features
+#### 2.1.1 Visual examination of features and neurons
+
+In this section, we will present some of the learned features and try to interpret them. We will also look at neurons activations and compare them in term of mono/polysemanticity with the learned features. More precisely, for each feature (direction $$\mathbf{d}_k$$), we will compute the 100 images that activate it the most (maximize $$f_k$$). For each neuron (cartesian coordinate in $$\mathbb{R}^{n_classes}$$) we do the same and compute the 100 images that activate it the most. We then plot the top 25 images for each feature and each neuron. We then try to interpret the learned feature and the neuron. 
+
+##### Layer 5b
+
+This layer is the last layer before the classification head. It exhibits significant superposition. Yet, the fact that it is one of the last layer should mean that it might be easier for the auto-encoder to find mono-semantic features (a few linear layers after mixed 5b are then able to deconvolve 5b activations into logits with good precision).
+
+Some of the learned features correspond directly to specific classes in ImageNet. For example, in run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$), feature 0 corresponds to the "mortarboard" class. The feature seems to have learned to detect the shape of a motarboard, as well as the presence of academic robes or diplomas. Surprisingly in the top 25 images, we also find an image of a mortar and one of a monitor. If a mortar has a similar shape, the monitor does not. THis is a clear example that our model isn't perfect. To save on compute ressources, we could not follow Anthropic's suggestion to train the auto-encoder "long after loss has plateaued". 
+
+Other learned features do not correspond to a specific class but are visually very interpretable and monosemantic. For example, in the same run as above, feature 2 seems to descripe pointy metalic objects (screws, paintbrushs with a metalic guard, nails, corkscrews, revolver with or without bullets, drumsticks, shovel...).
+
+Some feature are monosemantic in the animal kingdom. For example, in run ft92b79c, feature 10 correponds to insects/animal shells. In the top 25 images we recognize a lot of insects with articulated shells but also a species of turtle (terrapin), a conch, trilobite and a few snakes. Interestingly, a rusty radiator also found his way in the top 25 images (but it shares some visual similarity with an articulated shell).
+
+Other feature include people wearing pink, something that looks like a train/truck, the content of a pot (food), very dark animals, a group of speedometers, compass and other -meters, things with thin stripes of yellow, black and white (from a hornet to a snake to a hockey player)...
+
+Conversely, when looking at the feature that gets most activated by dogs in general and then looking at the top 25 images, we find only dogs. That was expected but one should note that the feature seems even more precise with most dogs having hanging ears and a fur color that is either black, white, brown or a mix of these colors. Other dog features also seem to have a semantic meaning that is more precise than just "dog". The second feature most activated by dogs seems to describe dogs with short hair, colors that are grey, white or at least pale in some way. The third feature is about dogs with abudant hairs that obstruct their face (tibetan terrier, briards...). The fourth and fifth are respectively about EntleBucher and flat and curly-coated retrivers. 
+
+On the contrary, when looking at random neurons. Mixed5b seems to exihibit even more superposition than mixed 4a. Perhaps this is due to the fact that Mixed4a being present earlier might correspond to visually more monosemantic images. In appendix, we provide examples of top 25 images for random neurons in mixed5b.
+
+When looking at 100 random features, 46 were found to be interpretable and monoseantic, 29 interpretable but with some superposition (less than 20%) or doubt with respect to the interpretation, 17 were somewhat interpretable but with significant superposition leading to significant doubt on the interpretation and 8 were not interpretable at all. Please note this is a very subjective evaluation.
+
+When doing the same experiment with 100 random neurons, 2 were found to be interpretable and monosemantic, 15 interpretable but with some superposition (less than 20%) or doubt with respect to the interpretation, 48 were exhibited significant superposition leading to significant doubt on the interpretation and 35 were not interpretable at all. Again, if this was a trial between features and neurons, I would be the judge (in chosing which experiment to "allow"), the jury (in evaluating the results) and the executioner (in writing this report).
+
 
 #### 2.1.2 Feature visualization
 
-#### 2.1.3 Comparison with neuron activations
+One of the next step will be to apply standard feature visualization techniques to the activations of our encoder. It will be interesting to see if interpretable features are reflected in the fabricated images and if clarity of said images is improved.
 
-### 2.2 Sparsity, how sparse are learned features
+### 2.2 Sparsity, how sparse are learned features, what does a feature look like?
+
+On average, for layer mixed 5b, a bottleneck of size 5080 and $$\lambda = 10^{-5}$$, an image activates 15 features, with a standard deviation of 6.5 features. As expected, the learned features are much sparser than neurons. On average, 764 neurons are activated by an image, with a standard deviation of 73 neurons. In the appendix, we provide distributions for both neurons and features activations.
+
+A natural question then is to ask what a feature looks like. Like Anthropic, we compute the proportion of the squared norm of the feature (direction $$\mathbf{d}_k$$) that is explained by the top neuron (coordinate of $$\mathbf{d}_k$$ with highest square value) versus the next 9 neurons. As with their work on language models, we find that a majority of features are dense in the neuron basis with only few features being explained very well by the first 10 neurons (let alone the first neuron). See the appendix for a scatter plot of the proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons.
 
 ### 2.3 Metric evaluation
+
+The learned feature also exihibted a significantly smaller semantic diameter than neurons. For the layer mixed5b and the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$), the average semantic diameter of a neuron was $$7644 \pm 24$$ while the average diameter of a feature was $$394 \pm 54$$. We provide in appendix a histogram of the semantic diameter of neurons and features for the same run. This is encouraging, showing that our metric is in agreement with our visual examination of features and neurons.
 
 ## 4. Discussion and Perspectives
 
