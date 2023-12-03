@@ -17,7 +17,7 @@ In artificial neural networks, the most basic computing unit, the neuron, can so
 ## Introduction
 
 In 2017 in their Distill article [Feature Visualization](https://distill.pub/2017/feature-visualization/), Olah et al. uncovered neurons in InceptionV1 that were responding to wats, foxed and cars. When probing further and visualizing the features learned by said neuron, one could clearly recognize a patchwork of cats head and cars hoods and windshields. This is a clear example of superposition. Authors wrote:
->"Examples like thse suggest that neurons are not necessarily the right semantic unit for understanding neural nets."
+>"Examples like these suggest that neurons are not necessarily the right semantic unit for understanding neural nets."
 
 In language models trained by Anthropic, they found similar neurons responding to a mixture of code and natural language. Probing superposition further in their series [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/), they suggest that an independent, monosemantic feature is actually a linear combination of neurons. They contend this increases neural network representation power, increases neural network ability to "represent more independent "features" of the data than it has neurons". Experiments on small toy models suggest this phenomenon arises naturally during training. On the flip side, Anthropic seems to have shown superposition is actually one of the main causes of neural network vulnerability to adversarial attacks. Indeed, if semanticly independent features are actually close linear combinations of neurons, a small perturbation in the input can cause a set of activations to "jump" from one mono-semantic feature to another. This is a very interesting result, but it is not the focus of this work. Superposition is also a problem for interpretability. If a neuron is responding to a mixture of features, it is harder to interpret what it is actually doing. This will be the focus of our work on vision models. We will try to implement one of Anthropic's strategy to find monosemantic features. They developed this method for a 1 layer transformer model. We will apply it to InceptionV1. Said method is a weak dictionary learning technique that relies on a sparse 1-layer deep auto-encoder. By having a very large bottleneck, we allow the auto-encoder to learn an overcomplete basis of neuron activations that is monosemantic. Sparsity, enforced via L1-regularization, is key in forcing the auto-encoder learn a monosemantic or few-semantic representation of the set of neuron activations. Indeed, L1-regularization forces the auto-encoder to reconstruct the input using only a few features/a few vectors in the overcomplete basis. Naturally, the features and vectors in question will be tailored to a specific set of neuron activations. In this work, we show that this method is promising beyond its original scope. We also suggest a metric based on word semanticity (of the ImageNet classes) to evaluate visual monosemanticity. As discussed, this metric is not perfect and makes more sense for the last layers of a vision classifier. For earlier layers, automatic feature evaluation might be done using CLIP embeddings. We leave this for future work and remain open to collaboration (see the TODO section in the Appendix).
 
@@ -28,7 +28,7 @@ In language models trained by Anthropic, they found similar neurons responding t
 ### 1.2 Architecture and Methods
 
 We will work on InceptionV1 activations. More precisely, we sill work on layers 4a (middle layer, one of the first exhibiting superposition) and layer 5b (last layer before classification head). Here is a reminder of the architecture of InceptionV1:
-[<img src="/docs/Inceptionv1L" />]
+[<img src="/docs/Inceptionv1L.png" />]
 
 When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $(B, C_{in}, H_{in}, W_{in})$, producing a batch of shape $(B, C_{layer}, H_{layer}, W_{layer})$, we then sum averages activations over the spatial dimensions to get a batch of shape $(B, C_{layer})$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
 
@@ -44,7 +44,7 @@ $$\mathbf{\hat{x}} = \mathbf{W}_d(f_1(\mathbf{x}), ..., f_K(\mathbf{x})) + b_d$$
 where $\mathbf{W}_d$ is the decoder weight matrix. We force column of $\mathbf{W}_d$ to have unit norm. This is equivalent to forcing the $\mathbf{d}_k$ to have unit norm. 
 
 This auto-encoder is then trained with the following loss:
-$$\mathcal{L} = \mathbb{E}(||\mathbf{x} - \mathbf{\hat{x}}||_2^2 + \lambda ||\mathbf{f}(\mathbf{x})||_1)$$
+$$\mathcal{L} = \mathbb{E}(\vert\vert\mathbf{x} - \mathbf{\hat{x}}\vert\vert_2^2 + \lambda \vert\vert\mathbf{f}(\mathbf{x})\vert\vert_1)$$
 where $\mathbf{f}(\mathbf{x}) = (f_1(\mathbf{x}), ..., f_K(\mathbf{x}))$ and $\lambda$ is a sparsity parameter.
 
 #### 1.2.2 Training
@@ -73,7 +73,7 @@ where $N_i$ is the number of images in class $i$ and $f_k(\mathbf{x}_{ij})$ is t
 
 We propose the following metric to evaluate the monosemanticity of a feature $d_k$:
 
-$$\mathrm{mono}(d_k) = \frac{1}{||\mathrm{freq}(d_k)||_2^2}\mathrm{freq}(d_k)^\intercal D \mathrm{freq}(d_k)$$
+$$\mathrm{mono}(d_k) = \frac{1}{\vert\vert\mathrm{freq}(d_k)\vert\vert_2^2}\mathrm{freq}(d_k)^\intercal D \mathrm{freq}(d_k)$$
 
 This measure how monosemantic a feature is with respect to semanticity of ImageNet classes. If a feature is activated by images of a single class, it will have a low score. If it is activated by a group of very close classes like different breeds of dogs, it will have a slightly higher score, etc...
 

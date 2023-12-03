@@ -31,7 +31,7 @@ menu:
 #menu_external:
  #- title: OleVik.me
   # url: "http://olevik.me/"
-mathjax: false
+mathjax: true
 markdown: kramdown
 encoding: utf-8
 baseurl: david.heurtel-depeiges.github.io
