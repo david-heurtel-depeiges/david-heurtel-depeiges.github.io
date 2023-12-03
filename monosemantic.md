@@ -31,6 +31,8 @@ In this work, we show that this method is promising beyond its original scope. W
 
 ### 1.1 Background
 
+Anthropic blog post presents a very good summary of previous work on dictionary learning, weak dictionary learning, sparse auto-encoders and how they were used in the past for interpretability reason. The reader should refer to their blog post for a complete overview (and also because their work is much more complete than ours, although done for LLMs). We will not repeat it here.
+
 ### 1.2 Architecture and Methods
 
 We will work on InceptionV1 activations. More precisely, we sill work on layers 4a (middle layer, one of the first exhibiting superposition) and layer 5b (last layer before classification head). Here is a reminder of the architecture of InceptionV1:
