@@ -28,24 +28,56 @@ In language models trained by Anthropic, they found similar neurons responding t
 ### 1.2 Architecture and Methods
 
 We will work on InceptionV1 activations. More precisely, we sill work on layers 4a (middle layer, one of the first exhibiting superposition) and layer 5b (last layer before classification head). Here is a reminder of the architecture of InceptionV1:
-[<img src="/docs/Inceptionv1L.png" />]
+<img  align="left" width="1000" height="200" src="/docs/Inceptionv1L.png" />
 
 When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $(B, C_{in}, H_{in}, W_{in})$, producing a batch of shape $(B, C_{layer}, H_{layer}, W_{layer})$, we then sum averages activations over the spatial dimensions to get a batch of shape $(B, C_{layer})$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
 
 #### 1.2.1 Auto-encoder
 
-We then train an auto-encoder on the $(B, C_{layer})$ activations. Let's have a quick reminder of why this might be a good idea. We present here Anthropic's justification. We want to decompose the activation vector $\mathbf{x}$ of size $C_{layer}$ into a linear combination of $K$ features $\mathbf{d}_k$ of size $C_{layer}$:
-$$\mathbf{x} \approx b + \sum_{k=1}^K f_k(\mathbf{x})\mathbf{d}_k$$
-where $b$ is a bias term and $f_k(\mathbf{x})$ is a scalar function corresponding to the activation of the $k^{th}$ feature. $\mathbf{d}_k$ is the $k^{th}$ feature direction. The $\mathbf{d}_k$ form the overcomplete basis we mentionned above. We impose that they have unit norm. We know need to determine or at least approximate the $f_k(\mathbf{x})$ functions. We do so by training the auto-encoder. The output of the encoder is:
-$$f_k(\mathbf{x}) = \mathrm{ReLU}(\mathbf{W}_e(\mathbf{x} - b_d) + b_e)_k$$
-where $\mathbf{W}_e$ is the encoder weight matrix, $b_d$ is the decoder bias and $b_e$ is the encoder bias. One might notice that we first remove the decoder bias. $b_d$ will correspond to the $b$ term in the first equation of this paragraph.
+We then train an auto-encoder on the \$$(B, C_{layer})$$ activations. Let's have a quick reminder of why this might be a good idea. We present here Anthropic's justification. We want to decompose the activation vector \$$\mathbf{x}$$ of size \$$C_{layer}$$ into a linear combination of \$$K$$ features \$$\mathbf{d}_k$$ of size \$$C_{layer}$$:
+
+
+$$
+\begin{equation*}
+\mathbf{x} \approx b + \sum_{k=1}^K f_k(\mathbf{x})\mathbf{d}_k
+\end{equation*}
+$$
+
+
+where $b$ is a bias term and \$$f_k(\mathbf{x})$$ is a scalar function corresponding to the activation of the \$$k^{th}$$ feature. \$$\mathbf{d}_k$$ is the \$$k^{th}$$ feature direction. The \$$\mathbf{d}_k$$ form the overcomplete basis we mentionned above. We impose that they have unit norm. We know need to determine or at least approximate the \$$f_k(\mathbf{x})$$ functions. We do so by training the auto-encoder. The output of the encoder is:
+
+
+$$
+\begin{equation*}
+f_k(\mathbf{x}) = \mathrm{ReLU}(\mathbf{W}_e(\mathbf{x} - b_d) + b_e)_k
+\end{equation*}
+$$
+
+
+where \$$\mathbf{W}_e$$ is the encoder weight matrix, \$$b_d$$ is the decoder bias and \$$b_e$$ is the encoder bias. One might notice that we first remove the decoder bias. \$$b_d$$ will correspond to the \$$b$ term in the first equation of this paragraph.
 The output of the decoder is then:
-$$\mathbf{\hat{x}} = \mathbf{W}_d(f_1(\mathbf{x}), ..., f_K(\mathbf{x})) + b_d$$
-where $\mathbf{W}_d$ is the decoder weight matrix. We force column of $\mathbf{W}_d$ to have unit norm. This is equivalent to forcing the $\mathbf{d}_k$ to have unit norm. 
+
+
+$$
+\begin{equation*}
+\mathbf{\hat{x}} = \mathbf{W}_d(f_1(\mathbf{x}), ..., f_K(\mathbf{x})) + b_d
+\end{equation*}
+$$
+
+
+where \$$\mathbf{W}_d$$ is the decoder weight matrix. We force column of\$$\mathbf{W}_d$$ to have unit norm. This is equivalent to forcing the \$$\mathbf{d}_k$$ to have unit norm. 
 
 This auto-encoder is then trained with the following loss:
-$$\mathcal{L} = \mathbb{E}(\vert\vert\mathbf{x} - \mathbf{\hat{x}}\vert\vert_2^2 + \lambda \vert\vert\mathbf{f}(\mathbf{x})\vert\vert_1)$$
-where $\mathbf{f}(\mathbf{x}) = (f_1(\mathbf{x}), ..., f_K(\mathbf{x}))$ and $\lambda$ is a sparsity parameter.
+
+
+$$
+\begin{equation*}
+\mathcal{L} = \mathbb{E}(\vert\vert\mathbf{x} - \mathbf{\hat{x}}\vert\vert_2^2 + \lambda \vert\vert\mathbf{f}(\mathbf{x})\vert\vert_1)
+\end{equation*}
+$$
+
+
+where \$$\mathbf{f}(\mathbf{x}) = (f_1(\mathbf{x}), ..., f_K(\mathbf{x}))$$ and \$$\lambda$$ is a sparsity parameter.
 
 #### 1.2.2 Training
 
@@ -65,15 +97,27 @@ The first analysis of the result is manual and visual. We look at a learned feat
 
 Visually examining features is very time consuming and subjective. Ideally, one would have an automated way of evaluating the monosemanticity of a feature. In Anthropic's work, they actually used their own LLM, Claude, to evaluate how monosemantic learned language features were (and Claude was in agreement with human assessment). We do not have an equivalent model.
 
-ImageNet classes, although not a perfect description of our world are actually synsets in the WordNet database/graph. This means that we have a graph of relations (hypernyms, hyponyms...) between ImageNet classes and several other synsets in the WordNet database. Using that, we can build a minimum spanning tree, corresponding to ImageNet hierarchy, with each leaf node corresponding to an ImageNet class and each child of a node being a more precise instance of the father node, an hyponym. Finally, we have a semantic distance between two ImageNet classes that is the length of the shortest path between the two classes in the minimum spanning tree. This induces a matrix $D$ of size $(1000, 1000)$ that is symetric and with zero diagonal.
+ImageNet classes, although not a perfect description of our world are actually synsets in the WordNet database/graph. This means that we have a graph of relations (hypernyms, hyponyms...) between ImageNet classes and several other synsets in the WordNet database. Using that, we can build a minimum spanning tree, corresponding to ImageNet hierarchy, with each leaf node corresponding to an ImageNet class and each child of a node being a more precise instance of the father node, an hyponym. Finally, we have a semantic distance between two ImageNet classes that is the length of the shortest path between the two classes in the minimum spanning tree. This induces a matrix \$$D$$ of size \$$(1000, 1000)$$ that is symetric and with zero diagonal.
 
-Given a feature $d_k$, we can then compute the average activation of this feature over each class. This gives a vector in $\mathbb{R}^{1000}$:
-$$\mathrm{freq}(d_k)_i = \frac{1}{N_i}\sum_{j=1}^{N_i}f_k(\mathbf{x}_{ij})$$
-where $N_i$ is the number of images in class $i$ and $f_k(\mathbf{x}_{ij})$ is the activation of feature $d_k$ for image $j$ in class $i$. 
+Given a feature \$$d_k$$, we can then compute the average activation of this feature over each class. This gives a vector in \$$\mathbb{R}^{1000}$$:
 
-We propose the following metric to evaluate the monosemanticity of a feature $d_k$:
 
-$$\mathrm{mono}(d_k) = \frac{1}{\vert\vert\mathrm{freq}(d_k)\vert\vert_2^2}\mathrm{freq}(d_k)^\intercal D \mathrm{freq}(d_k)$$
+$$
+\begin{equation*}
+\mathrm{freq}(d_k)_i = \frac{1}{N_i}\sum_{j=1}^{N_i}f_k(\mathbf{x}_{ij})
+\end{equation*}
+$$
+
+
+where \$$N_i$$ is the number of images in class \$$i$$ and \$$f_k(\mathbf{x}_{ij})$$ is the activation of feature \$$d_k$$ for image \$$j$$ in class \$$i$$. 
+
+We propose the following metric to evaluate the monosemanticity of a feature \$$d_k$$:
+
+$$
+\begin{equation*}
+\mathrm{mono}(d_k) = \frac{1}{\vert\vert\mathrm{freq}(d_k)\vert\vert_2^2}\mathrm{freq}(d_k)^\intercal D \mathrm{freq}(d_k)
+\end{equation*}
+$$
 
 This measure how monosemantic a feature is with respect to semanticity of ImageNet classes. If a feature is activated by images of a single class, it will have a low score. If it is activated by a group of very close classes like different breeds of dogs, it will have a slightly higher score, etc...
 
