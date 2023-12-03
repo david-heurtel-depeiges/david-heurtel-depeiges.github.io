@@ -25,7 +25,7 @@ On the flip side, Anthropic seems to have shown superposition is actually one of
 
 Superposition is also a problem for interpretability. If a neuron is responding to a mixture of features, it is harder to interpret what it is actually doing. This will be the focus of our work on vision models. We will try to implement one of Anthropic's strategy to find monosemantic features. They developed this method for a 1 layer transformer model. We will apply it to InceptionV1. Said method is a weak dictionary learning technique that relies on a sparse 1-layer deep auto-encoder. By having a very large bottleneck, we allow the auto-encoder to learn an overcomplete basis of neuron activations that is monosemantic. Sparsity, enforced via L1-regularization, is key in forcing the auto-encoder learn a monosemantic or "few-semantic" representation of the set of neuron activations. Indeed, L1-regularization forces the auto-encoder to reconstruct the input using only a few features/a few vectors in the overcomplete basis. Naturally, the features and vectors in question will be tailored to a specific set of neuron activations. 
 
-In this work, we show that this method is promising beyond its original scope. We also suggest a metric based on word semanticity (of the ImageNet classes) to evaluate visual monosemanticity. As discussed, this metric is not perfect and makes more sense for the last layers of a vision classifier. For earlier layers, automatic feature evaluation might be done using CLIP embeddings. We leave this for future work and remain open to collaboration (see the TODO section in the Appendix).
+In this work, we show that this method is promising beyond its original scope. We also suggest a metric based on word semanticity (of the ImageNet classes) to evaluate visual monosemanticity. As discussed, this metric is not perfect and makes more sense for the last layers of a vision classifier.
 
 ## 1. Background and Methods
 
@@ -176,7 +176,13 @@ A natural question then is to ask what a feature looks like. Like Anthropic, we 
 
 The learned feature also exihibted a significantly smaller semantic diameter than neurons. For the layer mixed5b and the run ft92b79c (5080 bottleneck neurons, $$\lambda=10^{-5}$$), the average semantic diameter of a neuron was $$7644 \pm 24$$ while the average diameter of a feature was $$394 \pm 54$$. We provide in appendix a histogram of the semantic diameter of neurons and features for the same run. This is encouraging, showing that our metric is in agreement with our visual examination of features and neurons.
 
-## 4. Discussion and Perspectives
+## 4. Conclusion and Perspectives
+
+This work is still in its beginning and there are many things that can be done to improve it. Many interesting questions remain unanswered. Yet, we believe this work is promising and that it is worth pursuing it. Most notably, as a proof of concept, we have shown that the method developed by Anthropic for LLMs can be applied to vision models. A sparse 1-layer auto-encoder seems able to learn fairly monosemantic feature in the last layer of InceptionV1. Whether this is true for earlier layers remains to be seen (we are currently examining trained models on mixed 4a). A visual examination of learned features has shown that most of them are interpretable and with little superposition. However, some features are not interpretable at all and some have significant superposition. Further exploration is needed to alleviate this problem. 
+
+We have also suggested a metric to evaluate the monosemanticity of a feature. This metric is based on the semantic hierarchy of ImageNet classes and a few synsets of WordNet. It should make more sense for the last layers of a vision classifier where features should correspond more closely to the output of the model. For earlier layers, should this metric prove uncorrelated with feature quality, some work should be done to find automated way to evaluate the monosemanticity of a feature. 
+
+Finally, we have studied what a feature looks like in the neuron basis and how sparse a neuron activation set is in the feature (overcomplete) basis. We have shown that features are much sparser than neurons and that most features are dense in the neuron basis. Our results here coincide with Anthropic's results on LLMs. Further work should try to describe more precisely the structure of the basis, how descriptive it is and how many features are needed to describe a neuron activation set, up to a certain precision. Another perspective would be to try and "project" an image activation on its top $$k$$ features for some layer and see how this impact the classification accuracy. 
 
 ### 4.3 TODOs and open questions
 
