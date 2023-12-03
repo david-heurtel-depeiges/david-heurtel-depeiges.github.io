@@ -178,9 +178,16 @@ The learned feature also exihibted a significantly smaller semantic diameter tha
 
 ### 4.3 TODOs and open questions
 
-CLIP metric
+#### TODOs
+1. Do the same analysis on layer mixed 4a
+2. Try and devise some rules on hyper-parameter tuning for the auto-encoder. 
+3. Implement this method on a Vision Transformer (ViT) and compare results with InceptionV1.
 
-## Conclusion
+#### Open questions
+
+1. What does monosemanticity mean on a image, especially for early layers?
+2. How to evaluate the monosemanticity of a feature in a more automated way?
+3. Can we find "pure" circuits between learned features at different layers? Pure circuits would be more semantically interpretable than usual circuits.
 
 ## References
 
