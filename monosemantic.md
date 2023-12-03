@@ -28,7 +28,9 @@ In language models trained by Anthropic, they found similar neurons responding t
 ### 1.2 Architecture and Methods
 
 We will work on InceptionV1 activations. More precisely, we sill work on layers 4a (middle layer, one of the first exhibiting superposition) and layer 5b (last layer before classification head). Here is a reminder of the architecture of InceptionV1:
+
 <img  align="left" width="800" height="170" src="/docs/Inceptionv1L.png" />
+
 
 When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $(B, C_{in}, H_{in}, W_{in})$, producing a batch of shape $(B, C_{layer}, H_{layer}, W_{layer})$, we then sum averages activations over the spatial dimensions to get a batch of shape $(B, C_{layer})$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
 
