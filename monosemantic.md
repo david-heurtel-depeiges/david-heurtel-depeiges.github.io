@@ -131,6 +131,8 @@ This measure how monosemantic a feature is with respect to semanticity of ImageN
 
 This metric is far from perfect. Most notably for early layers, it is not clear that ImageNet classes are the best semantic description of the world. 
 
+> We use a component of the python package robustness to build the minimum spanning tree.
+
 ## 2. Initial Results
 
 ### 2.1 Monosemanticity of features
@@ -190,6 +192,16 @@ The learned feature also exihibted a significantly smaller semantic diameter tha
 3. Can we find "pure" circuits between learned features at different layers? Pure circuits would be more semantically interpretable than usual circuits.
 
 ## References
+
+Bricken, et al., "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", Transformer Circuits Thread, 2023. [link](https://transformer-circuits.pub/2023/monosemantic-features#citation)
+
+Elhage, et al., "Toy Models of Superposition", Transformer Circuits Thread, 2022. [link](https://transformer-circuits.pub/2022/toy_model/)
+
+Olah, et al., "Feature Visualization", Distill, 2017. [link](https://distill.pub/2017/feature-visualization/)
+
+Engstrom, et al. Robustness (Python Library), 2019 [link](https://github.com/MadryLab/robustness)
+
+Lucent (Python Library), 2020 [link](https://lucent.readthedocs.io/en/latest/index.html) for feature visualization and InceptionV1 weights (modified local version).
 
 ## Appendix
 
