@@ -306,6 +306,6 @@ Some further work exploring in detail the sparsity as a function of the bottlene
 Finally, here is a scatter plot of the proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons for the run same run.
 
 <figure style="text-align: center;">
-  <img style="display: inline-block;" width="500" height="300" src="/docs/feature_explained_by_neuron.png">
+  <img style="display: inline-block;" width="500" height="300" src="/docs/feature_explained_by_neurons.png">
   <figcaption style="display: block;">Figure App.C.2: The proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons for one run.</figcaption>
 </figure>
