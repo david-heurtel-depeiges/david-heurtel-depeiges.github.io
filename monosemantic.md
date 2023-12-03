@@ -193,6 +193,8 @@ The learned feature also exihibted a significantly smaller semantic diameter tha
 
 ## References
 
+This work is based on the following papers and blog posts (list not yet complete):
+
 Bricken, et al., "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning", Transformer Circuits Thread, 2023. [link](https://transformer-circuits.pub/2023/monosemantic-features#citation)
 
 Elhage, et al., "Toy Models of Superposition", Transformer Circuits Thread, 2022. [link](https://transformer-circuits.pub/2022/toy_model/)
