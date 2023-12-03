@@ -14,6 +14,8 @@ This is a research project that is still in progress. I am still working to impr
 
 In artificial neural networks, the most basic computing unit, the neuron, can sometimes exhibit a phenomenon called superposition. This is the ability of a neuron to respond to very different features/inputs. If this is thought to increase the representational power of the network by learning over-complete representations and cramming more information in a single neuron, it can also hinders effort to probe said neural networks and hinder interpretability. In this work, we reproduce Anthropic's work on monosemanticity in language models and apply it to vision models. We show that their method is promising beyond its original scope. We also suggest a metric to evaluate the monosemanticity of a learned dictionary feature.
 
+[<img src="/docs/github-mark.png" style="height: 40px; width:40px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity)
+
 ## Introduction
 
 In 2017 in their Distill article [Feature Visualization](https://distill.pub/2017/feature-visualization/), Olah et al. uncovered neurons in InceptionV1 that were responding to wats, foxed and cars. When probing further and visualizing the features learned by said neuron, one could clearly recognize a patchwork of cats head and cars hoods and windshields. This is a clear example of superposition. Authors wrote:
