@@ -193,7 +193,7 @@ CLIP metric
 Here is a plot of the matrix $$D$$:
 
 <figure>
-  <img style="float:none;" width="300" height="300" src="/docs/D.pnd">
+  <img style="float:none;" width="300" height="300" src="/docs/D.png">
   <figcaption>Figure App.B.1: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
 One can clearly see some structure, with some large blocks of classes that are close to each other.
