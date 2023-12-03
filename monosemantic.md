@@ -190,6 +190,7 @@ The learned feature also exihibted a significantly smaller semantic diameter tha
 1. What does monosemanticity mean on a image, especially for early layers?
 2. How to evaluate the monosemanticity of a feature in a more automated way?
 3. Can we find "pure" circuits between learned features at different layers? Pure circuits would be more semantically interpretable than usual circuits.
+4. Can we find features "splitting" into two or more as we increase the bottleneck size?
 
 ## References
 
@@ -293,3 +294,5 @@ In this section, we provide histograms of the number of neurons and features act
   <img style="display: inline-block;" width="400" height="300" src="/docs/num_act_features_neurons.png">
   <figcaption style="display: block;">Figure App.C.1: The matrix D induced by ImageNet hierarchy</figcaption>
 </figure>
+
+Some further work exploring in details sparsity as a function of the bottleneck size would be interesting.
