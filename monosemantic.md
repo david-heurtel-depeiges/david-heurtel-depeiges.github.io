@@ -37,7 +37,10 @@ Anthropic blog post presents a very good summary of previous work on dictionary 
 
 We will work on InceptionV1 activations. More precisely, we sill work on layers 4a (middle layer, one of the first exhibiting superposition) and layer 5b (last layer before classification head). Here is a reminder of the architecture of InceptionV1:
 
-<img style="float:none;" width="800" height="170" src="/docs/Inceptionv1L.png" />
+<figure>
+  <img style="float:none;" width="800" height="170" src="/docs/Inceptionv1L.png" alt="InceptionV1 Architecture">
+  <figcaption>Figure 1: InceptionV1 Architecture - Layers 4a and 5b. Original figure by <a href="https://distill.pub/2017/feature-visualization/" target="_blank">Google Brain</a>.</figcaption>
+</figure>
 
 When focusing on a specific layer, we will compute activations after concatenation of all the branches. For a batch of shape $$(B, C_{in}, H_{in}, W_{in})$$, producing a batch of shape $$(B, C_{layer}, H_{layer}, W_{layer})$$, we then sum averages activations over the spatial dimensions to get a batch of shape $$(B, C_{layer})$$. These will be the activations we will work with. Obviously we remove spatial information by doing so and learned features without spatial averaging might be more interesting. Notably, one should perhaps examine whether there exist some form of spatial invariance in the learned features or if there is maybe some form of spatial superposition/polysemanticity. A fixed set of activations may not correspond to the same feature in the top or bottom of the image. But we are getting off topic.
 
