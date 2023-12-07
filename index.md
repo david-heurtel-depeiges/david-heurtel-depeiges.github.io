@@ -12,7 +12,8 @@ I am currently looking for a PhD position starting september 2024, either in aca
 
 
 ## News 
-**16. December 2023 Will be giving a quick talk at NeurIPS 2023 ML4PS workshop!**
+**30. November 2023 Google France Research Day** Fascinating day at Google France in Paris with a series of exciting talks on AI safety and privacy. From Fully Homomorphic Encryption in ML to Differential Privacy and AI safety, it was a great opportunity to learn about the latest developments in these fields and hear some great speakers from Google and academia.  
+**On 16. December 2023 Will be giving a quick talk at NeurIPS 2023 ML4PS workshop!**
 
 **29. October 2023 In person at Hammers and Nails 2023 in Ascona, Switzerland**. Excited to be able to present a poster on my work on diffusion models for cosmology tomorrow. I am also looking forward to the talks and discussions with other researchers in the field.
 
@@ -32,4 +33,4 @@ A list of my contributions, publications and code can be found [here](/papers).
 ## Other projects
 
 ### Towards Monosemanticity in Vision Models with dictionary learning
-[<img src="/docs/github-mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic/)
+[<img src="/docs/github-mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic)
