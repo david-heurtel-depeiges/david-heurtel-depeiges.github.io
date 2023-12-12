@@ -20,7 +20,6 @@ menu:
   - page: Papers
     url : /papers
   - page: Other Projects
-    url: /projects
     links:
     - title: Towards Monosemanticity in Vision Models
       url: /monosemantic
