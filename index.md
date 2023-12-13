@@ -14,13 +14,15 @@ Looking for a PhD position starting September 2024!
 
 ## About me & Interests
 
-Hi, I am David Heurtel-Depeiges, a final year Master Student at Ecole Normale Supérieure Paris-Saclay through the MVA program: Mathematics, Vision and Learning (Apprentissage in French). I completed my undergraduate studies at Ecole Polytechnique, where I studied Applied Mathematics and Computer Science. I also did my first year of Master's there [^1]. I am widely interested in Machine Learning, Deep Learning and their application to many interesting problem from environemental studies to cosmology or other fields. More specifically, I am interested in the two (wide) following topics:
+Hi, I am David Heurtel-Depeiges, a final year Master Student at Ecole Normale Supérieure Paris-Saclay through the MVA program: Mathematics, Vision and Learning (Apprentissage in French). I completed my undergraduate studies at Ecole Polytechnique, where I studied Applied Mathematics and Computer Science. I also did my first year of Master's there[^1]. I am widely interested in Machine Learning, Deep Learning and their application to many interesting problem from environemental studies to cosmology or other fields. More specifically, I am interested in the two (wide) following topics:
 - **Deep Generative Models** with a focus on helping solve complex inference problems (including inverse problems) for scientific or medical applications. Right now I am looking at the intersection of optimal transport and generative modeling. And **Representation Learning** as data in science and medicine come in increasingly large quantity and a multimodal fashion. Advances in both these fields seem key to solving many challenges in scientific and medical AI.
 
 - **Foundation Models** and **AI Safety**. I am interested in the role of multimodality in building bettre foundation models. I am also interested in AI safety and its derivatives (interpretability, bias/fairness). Ultimately, understanding how foundation models work can help us understand and detect their failure modes (jailbreaking, hallucinations, etc.) and build better systems (truthful, robust ones).
 
 I am currently looking for a PhD position starting september 2024! I am also looking for a 4 to 6 months research internship starting in March/April 2024.
 
+
+I am going to cheat a little bit on this question and mention three papers: Stochastic Interpolants with data-dependent couplings, Entropic Neural Optimal Transport via Diffusion Processes, and Diffusion Schrödinger Bridge Matching. I reckon recent advances at the intersection of generative modeling and optimal transport could have a tremendous impact on solving complex inference problems and very general inverse problems (non-linear ones or under non gaussian noise) in science or medicine (e.g. inverse problems in cosmology, medical imaging, etc.). Ultimately, I would like for my research to contr
 
 ## News 
 **On 16. December 2023 Will be giving a brief talk at NeurIPS 2023 ML and the Physical Sciences workshop!**
@@ -45,4 +47,4 @@ A list of my contributions, publications and code can be found [here](/papers).
 ### Towards Monosemanticity in Vision Models with dictionary learning
 [<img src="/docs/github-mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic)
 
-[^1] The French higher education system is highly convoluted, trust me when I say what I did is not unusual. If you want more information: [preparatory classes](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), [structure of the programm at Polytechnique](https://programmes.polytechnique.edu/en/ingenieur-polytechnicien-program/program-details/program-structure)
+[^1]: The French higher education system is highly convoluted, trust me when I say what I did is not unusual. If you want more information: [preparatory classes](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), [structure of the programm at Polytechnique](https://programmes.polytechnique.edu/en/ingenieur-polytechnicien-program/program-details/program-structure)
