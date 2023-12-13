@@ -6,9 +6,9 @@ layout: default
 ---
 <img align="left" width="220" height="286" src="/docs/head_picture.jpg" style="padding-right: 10px; padding-top: 10px; padding-left: 10px;"/>
 
-Guest Researcher at the [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY
+Guest Researcher (and former intern), [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY
 
-Master Student at [Ecole Normale Supérieure Paris-Saclay](https://www.ens-paris-saclay.fr/en), [MVA program](https://www.master-mva.com/), Paris
+Master Student, [Ecole Normale Supérieure Paris-Saclay](https://www.ens-paris-saclay.fr/en), [MVA program](https://www.master-mva.com/), Paris
 
 Looking for a PhD position starting September 2024!
 
@@ -44,5 +44,8 @@ A list of my contributions, publications and code can be found [here](/papers).
 
 ### Towards Monosemanticity in Vision Models with dictionary learning
 [<img src="/docs/github-mark.png" style="height: 20px; width:20px;"/> Code](https://github.com/david-heurtel-depeiges/VisionMonoSemanticity) [<img src="/docs/link.png" style="height: 20px; width:20px;"/> Page](https://david-heurtel-depeiges.github.io/monosemantic)
+
+
+## Footnotes
 
 [^1]: The French higher education system is highly convoluted, trust me when I say what I did is not unusual. If you want more information: [preparatory classes](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles), [structure of the programm at Polytechnique](https://programmes.polytechnique.edu/en/ingenieur-polytechnicien-program/program-details/program-structure)
