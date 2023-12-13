@@ -22,8 +22,6 @@ Hi, I am David Heurtel-Depeiges, a final year Master Student at Ecole Normale Su
 I am currently looking for a PhD position starting september 2024! I am also looking for a 4 to 6 months research internship starting in March/April 2024.
 
 
-I am going to cheat a little bit on this question and mention three papers: Stochastic Interpolants with data-dependent couplings, Entropic Neural Optimal Transport via Diffusion Processes, and Diffusion Schrödinger Bridge Matching. I reckon recent advances at the intersection of generative modeling and optimal transport could have a tremendous impact on solving complex inference problems and very general inverse problems (non-linear ones or under non gaussian noise) in science or medicine (e.g. inverse problems in cosmology, medical imaging, etc.). Ultimately, I would like for my research to contr
-
 ## News 
 **On 16. December 2023 Will be giving a brief talk at NeurIPS 2023 ML and the Physical Sciences workshop!**
 
