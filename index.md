@@ -6,7 +6,7 @@ layout: default
 ---
 <img align="left" width="220" height="286" src="/docs/head_picture.jpg" style="padding-right: 10px; padding-top: 10px; padding-left: 10px;"/>
 
-Guest Researcher (and former intern), [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY
+Guest Researcher (and former intern), [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY. Supervised by [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/) and [Ruben Ohana](https://rubenohana.github.io/).
 
 Master Student, [Ecole Normale Supérieure Paris-Saclay](https://www.ens-paris-saclay.fr/en), [MVA program](https://www.master-mva.com/), Paris
 
