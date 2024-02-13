@@ -303,7 +303,7 @@ In this section, we provide histograms of the number of neurons and features act
 
 Some further work exploring in detail the sparsity as a function of the bottleneck size would be interesting.
 
-Finally, here is a scatter plot of the proportion of the squared norm of the feature explained by the top neuron versus the next 9 neurons for the run same run.
+Finally, here is a scatter plot of the proportion of the squared norm of the feature explained by the top neurxon versus the next 9 neurons for the run same run.
 
 <figure style="text-align: center;">
   <img style="display: inline-block;" width="500" height="300" src="/docs/feature_explained_by_neurons.png">
