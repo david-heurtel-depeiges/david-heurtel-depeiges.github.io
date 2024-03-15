@@ -22,7 +22,7 @@ I am currently looking for a PhD/industry position starting september 2024! I am
 
 
 ## News 
-**10. February 2024 Started a project at MVA to extend results from [this paper](arxiv.org/abs/2308.07983) to non-linear or non-gaussian cases**
+**10. February 2024 Started a project at MVA to extend results from [this paper](https://arxiv.org/abs/2308.07983) to non-linear or non-gaussian cases**
 
 **4. February 2024 Finished a project on CLIP embeddings for molecules** seen as graphs and their text descriptions.
 
