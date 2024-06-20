@@ -18,6 +18,7 @@ X 2020 at [Ecole Polytechnique](https://www.polytechnique.edu/en) and [MVA progr
 
 Hi, I am David Heurtel-Depeiges, an upcoming PhD candidate at MILA/Polytechnique Montreal supervised by Sarath Chandar. I am currently a research intern at Google DeepMind, London. I am widely interested in Machine Learning. More specifically, I am interested in the two following topics:
 - **Deep Generative Models** with a focus on helping solve complex inference problems (including inverse problems) for scientific or medical applications.
+
 - **Efficient Models**. How to build models that are frugal in terms of resources both during training and inference. Can these models be widely distributed and used on very different settings (can we use **Continual Learning, In context Learning**?) in a safe way (**AI safety**)?
 
 
