@@ -24,6 +24,7 @@ Hi, I am David Heurtel-Depeiges, an upcoming PhD candidate at MILA/Polytechnique
 
 ## News 
 **2. May 2024** Our paper "Listening to the Noise: Blind Denoising with Gibbs Diffusion" has been accepted at ICML 2024. Will be going there in person!
+
 **29. April 2024** Joined Google DeepMind as a Student Researcher for 4 months.
 
 ## Main Research Projects and Contributions
