@@ -6,9 +6,9 @@ layout: default
 ---
 <img align="left" width="220" height="286" src="/docs/head_picture.jpg" style="padding-right: 10px; padding-top: 10px; padding-left: 10px;"/>
 
-Student Researcher at Google DeepMind, London, supervised by Anian Ruoss (formerly by Grégoire Delétang)
+1st year PhD Student at [MILA](https://mila.quebec/en/), Montreal, supervised by [Sarath Chandar](https://sarathchandar.in/).
 
-Incoming PhD Student at [MILA](https://mila.quebec/en/), Montreal, supervised by [Sarath Chandar](https://sarathchandar.in/).
+Former Student Researcher at Google DeepMind, London, supervised by Anian Ruoss (formerly by Grégoire Delétang)
 
 Former Research Analyst, [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY. Supervised by [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/) and [Ruben Ohana](https://rubenohana.github.io/).
 
