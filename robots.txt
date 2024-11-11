@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://david-heurtel-depeiges.github.io//sitemap.xml
