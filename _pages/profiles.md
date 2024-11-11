@@ -27,7 +27,7 @@ nav_order: 7
 #       <p>Your City, State 12345</p>
 ---
 
-I haven't supervised anyone yet but when I do, their profiles will be here.
+I haven't supervised anyone yet but when I do, their bios will be here.
 
 ```
 
