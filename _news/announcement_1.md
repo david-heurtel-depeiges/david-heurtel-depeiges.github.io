@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Google DeepMind as a Student Researcher for the next 4 months! :gb: :guard:
+Joined Google DeepMind as a Student Researcher for the next 4 months!
