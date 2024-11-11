@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Overview of my GitHub repositories and contributions.
-nav: true
+nav: false # TODO: Change to true to display in the navigation bar
 nav_order: 4
 ---
 
