@@ -8,4 +8,5 @@ nav_order: 6
 ---
 
 I haven't taught any courses yet, I will for sure in the future and I might update this page in the meantime. Stay tuned!
+
 ```

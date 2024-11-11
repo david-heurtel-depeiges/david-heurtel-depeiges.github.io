@@ -55,7 +55,7 @@
       institution: Center for Computational Mathematics, Flatiron Institute, New York, USA
       year: April - August 2023
       description:
-        - Supervisors Bruno Régaldo-Saint Blancard and Ruben Ohana 
+        - Supervisors Bruno Régaldo-Saint Blancard and Ruben Ohana
         - Development of a new kind of diffusion models under colored noise
         - Component separation in comology, general denoising of natural images, integration in Bayesian inference pipelines
         - Paper accepted at ICML 2024
@@ -66,7 +66,7 @@
       description:
         - Supervisor Guillaume Perrin Fabre
         - Development of an app to predict algae concentration in freshwater reservoirs using Python, SQL and Docker.
-        - Creation of the app documentation 
+        - Creation of the app documentation
         - Deployment on GCP, development of tests to quantidy the model accuracy
 
     - title: Oral Examiner (Teaching Assistant)
