@@ -28,6 +28,6 @@ Formerly, I was a Student Researcher at Google DeepMind, London, supervised by A
 
 I graduated in 2024 from [Ecole Polytechnique](https://www.polytechnique.edu/en) and the [MVA program (Mathematics, Vision, Learning)](https://www.master-mva.com/), which means that I belong to the X2020 class (yes, I know, it's confusing, we number our classes from the first year of the program).
 
-<!-- 
+<!--
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
