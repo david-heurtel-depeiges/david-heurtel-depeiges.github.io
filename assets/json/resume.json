@@ -74,7 +74,7 @@
     }
       
   ],
-  "Experience": [
+  "experience": [
     {
       "name": "Google DeepMind, London, UK",
       "position": "Student Researcher",
@@ -124,7 +124,7 @@
       "endDate": "2021-04"
     }
   ],
-  "Technical Skills": [
+  "technical skills": [
     {
       "name": "Computer Science",
       "level": "Master",
