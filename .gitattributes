@@ -1,0 +1,3 @@
+assets/data/*.csv -diff
+assets/data/*.csv.gz -diff
+assets/data/*.zip -diff

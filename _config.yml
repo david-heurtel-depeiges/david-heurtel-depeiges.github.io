@@ -55,6 +55,14 @@ bib_search: true
 # Dimensions
 max_width: 800px
 
+# Custom navigation (added Data page)
+nav_pages:
+  - about.md
+  - publications.md
+  - projects.md
+  - blog.md
+  - data.md
+
 # TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
