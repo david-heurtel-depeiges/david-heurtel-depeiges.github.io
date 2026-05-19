@@ -19,10 +19,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi! I'm David Heurtel-Depeiges, a first year PhD Student at [MILA - Québec AI Institute](https://mila.quebec/) in Montreal, supervised by [Sarath Chandar](https://sarathchandar.in/). I am widely interested in Machine Learning but more specifically, my research interests are the following topics:
+Hi! I'm David Heurtel-Depeiges, a second year PhD Student at [MILA - Québec AI Institute](https://mila.quebec/) in Montreal, supervised by [Sarath Chandar](https://sarathchandar.in/), [Quentin Fournier](https://https://qfournier.github.io/), and a proud member of the [FLAIR-bio lab](https://flair-bio.com/)
 
-- **Deep Probabilistic Models** with a focus on helping solve complex inference problems for scientific applications. Currently working on **Discrete Diffusion**, **Consistency Matching** and **Inverse Problems**.
-- **AI Safety** with a focus on **Robust Alignment**, **Model Interpretability** and **Model Editing**.
+I am widely interested in Machine Learning but more specifically, my research interests are the following topics:
+
+- **Deep Probabilistic Models** with a focus on helping solve complex inference problems. Currently working on **Discrete and Continuous Diffusion and Flows**, **Inverse Problems**.
+- **AI for Science**: mainly in the context of **Computational Biology** (proteomics) and a side gig in **Radio Astronomy**.
 
 Formerly, I was a Student Researcher at Google DeepMind, London, supervised by Anian Ruoss and Tim Genewein. Before that, I was also a Research Analyst at the [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY, where I was supervised by [Bruno Regaldo-Saint Blancard](https://users.flatironinstitute.org/~bregaldosaintblancard/) and [Ruben Ohana](https://rubenohana.github.io/).
 
