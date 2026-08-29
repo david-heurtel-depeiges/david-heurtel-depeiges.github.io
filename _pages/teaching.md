@@ -2,13 +2,15 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false # Change this to `true` to include this page in the top navigation
+description: Courses I teach at Polytechnique Montréal.
+nav: true
 nav_order: 6
 ---
 
-I haven't taught any courses yet, I will for sure in the future and I might update this page in the meantime. Stay tuned!
+## INF8245AE — Machine Learning
 
-```
+**Lecturer**, Fall 2026 — [Polytechnique Montréal](https://www.polymtl.ca/)
 
-```
+A rigorous introduction to machine learning, covering not just how to use ML algorithms but why, how, and when they work.
+
+Course website: [chandar-lab.github.io/INF8245AE](https://chandar-lab.github.io/INF8245AE/)

@@ -61,7 +61,7 @@ nav_pages:
   - publications.md
   - projects.md
   - blog.md
-  - data.md
+  # - data.md
 
 # TODO: add layout settings (single page vs. multi-page)
 

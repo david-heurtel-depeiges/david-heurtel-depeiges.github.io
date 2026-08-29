@@ -1,34 +1,43 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Maps a co-author's lowercased, accent-stripped LAST name (as it appears in
+# _bibliography/papers.bib) to a URL. `firstname` must list every spelling used
+# in the .bib so the layout can disambiguate. See _layouts/bib.liquid.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"margossian":
+  - firstname: ["Charles", "C.", "Charles C.", "Charles Christopher"]
+    url: https://charlesm93.github.io/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"ohana":
+  - firstname: ["Ruben", "R."]
+    url: https://rubenohana.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"regaldo-saint blancard":
+  - firstname: ["Bruno", "B."]
+    url: https://bregaldo.github.io/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"genewein":
+  - firstname: ["Tim", "T."]
+    url: https://tim.inversetemperature.net/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"chen":
+  - firstname: ["Can", "C.", "Can (Sam)"]
+    url: https://mila.quebec/en/directory/can-sam-chen
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"langmead":
+  - firstname: ["Christopher James", "Christopher", "C. J.", "CJ"]
+    url: https://sites.google.com/view/langmeadlab/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"bengio":
+  - firstname: ["Yoshua", "Y."]
+    url: https://yoshuabengio.org/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"fournier":
+  - firstname: ["Quentin", "Q."]
+    url: https://qfournier.github.io/
+
+"le breton":
+  - firstname: ["Lola", "L."]
+    url: https://lolalebreton.github.io/
+
+"chandar":
+  - firstname: ["Sarath", "S."]
+    url: https://sarathchandar.in/

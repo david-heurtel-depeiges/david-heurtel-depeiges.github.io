@@ -3,7 +3,7 @@ layout: page
 title: Data
 permalink: /data/
 description: Public datasets for download (MNIST CSV format)
-nav: true
+nav: false # hidden from the navbar; page still reachable at /data/
 ---
 
 # Public Data
