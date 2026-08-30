@@ -23,8 +23,8 @@ Hi! I'm David Heurtel-Depeiges, a second year PhD Student at [MILA - Québec AI 
 
 I am widely interested in Machine Learning but more specifically, my research interests are the following topics:
 
-- **Deep Probabilistic Models** with a focus on helping solve complex inference problems. Currently working on **Discrete and Continuous Diffusion and Flows**, **Inverse Problems**.
 - **AI for Science**: mainly in the context of **Computational Biology** (proteomics) and a side gig in **Radio Astronomy**.
+- **Deep Probabilistic Models** with a focus on helping solve complex inference problems. Currently working on **Discrete and Continuous Diffusion and Flows**, **Inverse Problems**.
 
 Formerly, I was a Student Researcher at Google DeepMind, London, supervised by Anian Ruoss and Tim Genewein. Before that, I was also a Research Analyst at the [Center for Computational Mathematics](https://www.simonsfoundation.org/flatiron/center-for-computational-mathematics/), Flatiron Institute, NY, where I was supervised by [Bruno Regaldo-Saint Blancard](https://bregaldo.github.io/) and [Ruben Ohana](https://rubenohana.github.io/).
 
